@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФЕНИКС | Детейлинг & Рестайлинг Минск</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">ФЕНИКС</a>
+      <nav class="nav">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#reveal" class="nav__link">Результат</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+      <a href="tel:+375291030401" class="header__phone">+375-29-103-04-01</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__container">
+      <p class="hero__subtitle">ДЕТЕЙЛИНГ СТУДИЯ В МИНСКЕ</p>
+      <h1 class="hero__title">ВОЗРОЖДЕНИЕ <br><span class="text-fire">ВАШЕГО АВТО</span></h1>
+      <p class="hero__descr">Премиальное качество на уровне искусства. Оклейка, полировка, химчистка. Заставим вашу тачку гореть глубоким глянцем.</p>
+      <div class="hero__actions">
+        <a href="#contacts" class="btn btn--primary">Забронировать визит</a>
+        <a href="#services" class="btn btn--secondary">Смотреть услуги</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">НАШИ УСЛУГИ</h2>
+      <div class="services__grid">
+        
+        <div class="card animate-on-scroll" data-service="cleaning">
+          <div class="card__content">
+            <h3 class="card__title">Химчистка салона</h3>
+            <p class="card__text">Глубокая очистка интерьера со снятием сидений и сертифицированной химией.</p>
+            <div class="card__bottom">
+              <span class="card__price">от 100 BYN</span>
+              <span class="card__arrow">→</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll" data-service="polish">
+          <div class="card__content">
+            <h3 class="card__title">Полировка кузова и фар</h3>
+            <p class="card__text">Удаление царапин, восстановление прозрачности фар и нанесение керамики.</p>
+            <div class="card__bottom">
+              <span class="card__price">от 80 BYN</span>
+              <span class="card__arrow">→</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll" data-service="upholstery">
+          <div class="card__content">
+            <h3 class="card__title">Перетяжка потолка</h3>
+            <p class="card__text">Реставрация и перетяжка потолка, стоек и козырьков в премиум-материалы.</p>
+            <div class="card__bottom">
+              <span class="card__price">от 150 BYN</span>
+              <span class="card__arrow">→</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll" data-service="biled">
+          <div class="card__content">
+            <h3 class="card__title">Установка Bi-Led</h3>
+            <p class="card__text">Замена выгоревших линз и модернизация оптики мощными светодиодными модулями.</p>
+            <div class="card__bottom">
+              <span class="card__price">от 350 BYN</span>
+              <span class="card__arrow">→</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="reveal" class="portfolio-reveal">
+    <div class="container">
+      <h2 class="section-title">РЕЗУЛЬТАТ РАБОТЫ</h2>
+      
+      <div class="reveal-wrapper animate-on-scroll">
+        <div class="reveal-container">
+          <div class="reveal-img after-img">
+            <span class="reveal-badge reveal-badge--after">ПОСЛЕ</span>
+            <img src="Image/после.jpg" alt="После полировки">
+          </div>
+          
+          <div class="reveal-img before-img">
+            <span class="reveal-badge reveal-badge--before">ДО</span>
+            <img src="Image/до.jpg" alt="До полировки">
+          </div>
+          
+          <div class="reveal-slider">
+            <div class="slider-line"></div>
+            <div class="slider-button"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2 class="section-title">КОНТАКТЫ & ЗАПИСЬ</h2>
+      
+      <div class="contacts__grid">
+        <div class="contacts__info animate-on-scroll">
+          <div class="info-block">
+            <h3>АДРЕС СТУДИИ</h3>
+            <p>г. Минск, ул. </p>
+          </div>
+          <div class="info-block">
+            <h3>РЕЖИМ РАБОТЫ</h3>
+            <p>Ежедневно: 09:00 — 21:00</p>
+          </div>
+          <div class="info-block">
+            <h3>МЫ В СОЦСЕТЯХ</h3>
+            <a href="https://www.instagram.com/auto_detailing_minsk_/" target="_blank" class="instagram-link">@fenix</a>
+          </div>
+        </div>
+
+        <div class="contacts__form animate-on-scroll">
+          <form id="tg-form" class="order-form">
+            <div class="form-group">
+              <input type="text" id="user_name" placeholder="ВАШЕ ИМЯ" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="user_phone" placeholder="ТЕЛЕФОН (+375...)" required>
+            </div>
+
+            <div class="form-group">
+              <div class="custom-select" id="custom-service-select">
+                <div class="select-trigger">
+                  <span>ВЫБЕРИТЕ УСЛУГУ</span>
+                  <div class="arrow"></div>
+                </div>
+                <div class="select-options">
+                  <div class="option" data-value="Химчистка">Химчистка салона</div>
+                  <div class="option" data-value="Полировка">Полировка кузова и фар</div>
+                  <div class="option" data-value="Перетяжка потолка">Перетяжка потолка</div>
+                  <div class="option" data-value="Установка Bi-Led">Установка Bi-Led модулей</div>
+                </div>
+              </div>
+              <input type="hidden" id="user_service" name="service" required>
+            </div>
+
+            <div class="form-group">
+              <div class="custom-select" id="custom-time-select">
+                <div class="select-trigger">
+                  <span>УДОБНОЕ ВРЕМЯ ВИЗИТА</span>
+                  <div class="arrow"></div>
+                </div>
+                <div class="select-options select-options--scrollable">
+                  <div class="option" data-value="09:00 — 10:00">09:00 — 10:00</div>
+                  <div class="option" data-value="10:00 — 11:00">10:00 — 11:00</div>
+                  <div class="option" data-value="11:00 — 12:00">11:00 — 12:00</div>
+                  <div class="option" data-value="12:00 — 13:00">12:00 — 13:00</div>
+                  <div class="option" data-value="13:00 — 14:00">13:00 — 14:00</div>
+                  <div class="option" data-value="14:00 — 15:00">14:00 — 15:00</div>
+                  <div class="option" data-value="15:00 — 16:00">15:00 — 16:00</div>
+                  <div class="option" data-value="16:00 — 17:00">16:00 — 17:00</div>
+                  <div class="option" data-value="17:00 — 18:00">17:00 — 18:00</div>
+                  <div class="option" data-value="18:00 — 19:00">18:00 — 19:00</div>
+                  <div class="option" data-value="19:00 — 20:00">19:00 — 20:00</div>
+                </div>
+              </div>
+              <input type="hidden" id="user_time" name="time" required>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">ОТПРАВИТЬ ЗАЯВКУ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="service-modal" class="modal">
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <div class="modal__grid">
+        <div class="modal__body">
+          <h3 id="modal-title" class="modal__title">Название услуги</h3>
+          <div id="modal-text" class="modal__text"></div>
+          <a href="#contacts" class="btn btn--primary modal__btn" id="modal-action-btn">Забронировать место</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left">
+        <span class="footer__copy">© 2026 ООО «Феникс Детейлинг Студио»</span>
+        <p class="footer__law">Сайт носит информационный характер и не является интернет-магазином. Регистрация в Торговом реестре РБ не требуется.</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__email-block">
+          <span class="footer__label">РАБОЧАЯ ПОЧТА ДЛЯ СВЯЗИ:</span>
+          <a href="mailto:info@fenix-studio.by" class="footer__email">info@fenix-studio.by</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
